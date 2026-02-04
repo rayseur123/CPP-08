@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/03 14:20:04 by njooris           #+#    #+#             */
-/*   Updated: 2026/02/04 15:06:00 by njooris          ###   ########.fr       */
+/*   Updated: 2026/02/04 17:07:48 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ class	MutantStack : public std::stack<T>
 	
 	iterator	begin();
 	iterator	end();
+	iterator	rbegin();
+	iterator	rend();
 };
 
 #include "MutantStack.tpp"

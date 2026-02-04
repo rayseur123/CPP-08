@@ -6,25 +6,28 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 14:11:04 by njooris           #+#    #+#             */
-/*   Updated: 2026/02/04 15:13:41 by njooris          ###   ########.fr       */
+/*   Updated: 2026/02/04 17:10:13 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <list>
 #include "MutantStack.hpp"
 
-int main()
+void	testMain()
 {
+	std::cout << "test 1: " << std::endl;
 	MutantStack<int> mstack;
 	mstack.push(5);
 	mstack.push(17);
 	std::cout << mstack.top() << std::endl;
 	mstack.pop();
 	std::cout << mstack.size() << std::endl;
+	std::cout << "check point \n";
+
 	mstack.push(3);
 	mstack.push(5);
 	mstack.push(737);
-	//[...]
 	mstack.push(0);
 	MutantStack<int>::iterator it = mstack.begin();
 	MutantStack<int>::iterator ite = mstack.end();
@@ -36,5 +39,11 @@ int main()
 		++it;
 	}
 	std::stack<int> s(mstack);
-	return 0;
+	std::cout << std::endl;
+}
+
+int main()
+{
+	testMain();
+	return (0);
 }

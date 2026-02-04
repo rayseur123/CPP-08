@@ -6,7 +6,7 @@
 /*   By: njooris <njooris@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/30 16:52:28 by njooris           #+#    #+#             */
-/*   Updated: 2026/02/04 15:11:01 by njooris          ###   ########.fr       */
+/*   Updated: 2026/02/04 17:08:11 by njooris          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,16 @@ template <typename T>
 typename MutantStack<T>::iterator	MutantStack<T>::end()
 {
 	return (this->c.end());
+}
+
+template <typename T>
+typename MutantStack<T>::iterator	MutantStack<T>::rbegin()
+{
+	return (this->c.rbegin());
+}
+
+template <typename T>
+typename MutantStack<T>::iterator	MutantStack<T>::rend()
+{
+	return (this->c.rend());
 }
